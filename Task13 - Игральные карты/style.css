@@ -1,0 +1,118 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  line-height: 30px;
+}
+
+body {
+  min-width: 550px;
+  min-height: 290px;
+  padding: 10px;
+}
+
+.two-cards {
+  width: 350px;
+  height: 250px;
+  padding: 10px;
+  text-align: center;
+}
+
+.two-cards div {
+  position: relative;
+  display: inline-block;
+  width: 120px;
+  height: 180px;
+  margin: 0 10px;
+  margin-top: 30px;
+  vertical-align: middle;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+/* Ширина иконок, не изменяйте */
+.two-cards div::before,
+.two-cards div::after {
+  width: 20px;
+}
+
+/* Поворот нижней иконки */
+.two-cards div::after {
+  transform: rotate(180deg);
+}
+
+.ace-heart {
+  background-image: url('heart.svg');
+  background-size: 50px auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.ace-heart::before {
+  content: "A";
+  position: absolute;
+  font-size: 25px;
+  color: red;
+  font-weight: bold;
+  left: 5px;
+  top: 5px;
+  padding-bottom: 20px;
+  background-image: url('heart.svg');
+  background-size: 25px auto;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+.ace-heart::after{
+  content: "A";
+  position: absolute;
+  font-size: 25px;
+  color: red;
+  font-weight: bold;
+  right: 5px;
+  bottom: 5px;
+  padding-bottom: 20px;
+  background-image: url('heart.svg');
+  background-size: 25px auto;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+.two-spade {
+  background-image: url('spade.svg');
+  background-size: 50px auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+.two-spade::before {
+  content: "2";
+  position: absolute;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  left: 5px;
+  top: 5px;
+  padding-bottom: 20px;
+  background-image: url('spade.svg');
+  background-size: 25px auto;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
+
+.two-spade::after {
+  content: "2";
+  position: absolute;
+  font-size: 25px;
+  color: black;
+  font-weight: bold;
+  right: 5px;
+  bottom: 5px;
+  padding-bottom: 20px;
+  background-image: url('spade.svg');
+  background-size: 25px auto;
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+}
